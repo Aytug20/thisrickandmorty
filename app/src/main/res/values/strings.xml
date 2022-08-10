@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">thisrickandmorty</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="character_listesine_git">Character Listesine Git</string>
+    <string name="character_detayina_git">character_detayina_git</string>
+    <string name="hata_tekrar_dene">Hata! Tekrar DENE</string>
+    <string name="gender">gender</string>
+    <string name="species">species</string>
+    <string name="status">status</string>
+    <string name="name">name</string>
+    <string name="id">id</string>
+    <string name="todo">TODO</string>
+    <string name="characters_id">characters_id</string>
+    <string name="characters_status">characters_status</string>
+    <string name="characters_species">characters_species</string>
+    <string name="characters_gender">characters_gender</string>
+    <string name="characters_name">characters_name</string>
+    <string name="characters_todo">characters_todo</string>
+</resources>
