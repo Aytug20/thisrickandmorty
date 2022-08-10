@@ -14,6 +14,7 @@ class CharacterAPIService {
     private val api = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
+
         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
         .build()
         .create(CharacterAPI::class.java)
