@@ -15,7 +15,9 @@ data class Character(
     val characterGender:String?,
     @SerializedName("image")
     val characterImage:String?
-){
+)
 
+    data class CharacterResponse(
+        @SerializedName("results") val result: List<Character>
+    )
 
-}
