@@ -10,10 +10,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class CharacterAPIService {
 
-    var loggingInterceptor = HttpLoggingInterceptor()
+    val loggingInterceptor = HttpLoggingInterceptor()
         .setLevel(HttpLoggingInterceptor.Level.BODY)
 
-    var okHttpClient = OkHttpClient()
+    val okHttpClient = OkHttpClient()
         .newBuilder()
         .addInterceptor(loggingInterceptor)
         .build()
