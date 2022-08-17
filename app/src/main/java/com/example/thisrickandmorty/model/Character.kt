@@ -2,6 +2,7 @@ package com.example.thisrickandmorty.model
 
 import com.google.gson.annotations.SerializedName
 
+
 data class Character(
     @SerializedName("id")
     val characterId:String?,

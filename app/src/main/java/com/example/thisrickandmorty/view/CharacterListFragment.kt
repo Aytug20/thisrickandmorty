@@ -42,8 +42,8 @@ class CharacterListFragment : Fragment() {
 
 
 
-        recyclerView.layoutManager = LinearLayoutManager(context)
-        recyclerView.adapter = recyclerCharacterAdapter
+        characterlistrecyclerView.layoutManager = LinearLayoutManager(context)
+        characterlistrecyclerView.adapter = recyclerCharacterAdapter
 
         observeLiveData()
 
@@ -58,7 +58,7 @@ class CharacterListFragment : Fragment() {
         viewModel.characters.observe(viewLifecycleOwner, Observer { characters ->
             characters?.let{
 
-                recyclerView.visibility = View.VISIBLE
+                characterlistrecyclerView.visibility = View.VISIBLE
                 recyclerCharacterAdapter.characterListGüncelle(characters)
 
 
@@ -70,7 +70,8 @@ class CharacterListFragment : Fragment() {
             hata?.let {
                 if (it) {
                     character_hata_mesaj.visibility=View.VISIBLE
-                    recyclerView.visibility=View.GONE
+                    characterlistrecyclerView.visibility=View.GONE
+
 
                 } else {
                     character_hata_mesaj.visibility =View.GONE
@@ -83,7 +84,7 @@ class CharacterListFragment : Fragment() {
         viewModel.characterLoading.observe(viewLifecycleOwner,Observer{ yukleniyor ->
             yukleniyor?.let{
                 if (it){
-                recyclerView.visibility = View.GONE
+                characterlistrecyclerView.visibility = View.GONE
                 character_hata_mesaj.visibility = View.GONE
                 character_yükleniyor.visibility = View.VISIBLE
             } else{

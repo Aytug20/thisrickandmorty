@@ -17,10 +17,11 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_marginTop="0dp"
+            android:contentDescription="@string/characters_todo"
             android:minHeight="200dp"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/ic_launcher_background"
-            android:contentDescription="@string/characters_todo"></ImageView>
+            tools:ignore="ImageContrastCheck"></ImageView>
 
         <TextView
             android:id="@+id/charactersId"
